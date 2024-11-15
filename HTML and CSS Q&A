@@ -1,0 +1,54 @@
+
+<What are Semantic HTML tags used for?>
+Semantic HTML tags are used to define the meaning of the content they contain. Tags like <header>, <article>, and <footer> are semantic HTML tags, they specify the role of the content present on them.
+
+
+What is the purpose of head tag in HTML?
+The main purpose is to contain the metadata related to the webpage.
+
+
+Embedded style is basically an internal style. Apart from internal style what other styles do we use?
+Apart from internal style we also use inline and external styles. Inline style has the most priority. Internal and external has the same priority. Whichever we connect before, the other will be overwritten.
+
+
+What is the difference between a <div> and a <span> tag?
+Span tag is a inline tag, while div is a block. We cannot give height and width on inline elements such as <span> ones. There are some inline elements such as images, video tag <iframe> we can add height and
+width to them, but for other inline elements not.
+
+
+What is specificity in CSS?
+Specificity refers to precise ways of identifying elements that we are refering to. This means selectors ID, class name or element selector. ID selector has the highest priority, then class, and then element.
+
+
+What is the difference between a pseudo-element and a pseudo-class?
+There are multiple differences. The pseudo-class will select a particular state of some element, such as hover, focus, visited, or so. Pseudo-classes have a specificity of 10. 
+A pseudo-element will create an element or select a element like selecting somespecific part of the element or create a new element like after and before. Unlike pseudo classes, 
+pseudo elements have a specificity of one.
+
+
+What is the difference between margin and padding?
+Margin and padding are both used to create space, but they apply to different areas of an element. Margin is the space outside an element, creating distance between that element and its neighboring elements. 
+Padding, on the other hand, is the space inside an element, creating distance between the element's content and its border. In simple terms, margin pushes the element outward, while padding pushes the content inward.
+
+
+What is the difference between a box-sizing border-box and a box-sizing content box?
+box-sizing: border-box and box-sizing: content-box: The box-sizing property controls how an element's total width and height are calculated. With box-sizing: content-box, only the content area’s size is considered, 
+so padding and border are added on top of the set width/height, making the element larger. In contrast, box-sizing: border-box includes the content, padding, and border within the set width/height, so the element’s 
+size stays fixed even when padding or borders are added. This makes border-box useful for maintaining consistent element sizes.
+
+
+When does the scroll bar appear on a page?
+A scroll bar comes in those situations when let's say the parent has width of 500 and its child has a width of 600. Whenever the child width or height is higher than the parent one, a scroll bar will appear.
+
+
+How can we hide the scroll bar?
+We could do it by reducing the child width or height, but if there is too much content, it won't work out well. The one way of doing it is by using overflow: hidden; this is a good option, although it 
+will crop out everything that is outside of the parent, so it will be just hidden. The user won't be able to read it. What we should ideally do is restricting the max width or height of the child to the value
+that is given for the parent element => maxWidth: 100%; Also, if we remove the 600 width value for the child and leave the 500 width for parent, it will automatically apply 100% width to the child element fitting it
+into the parent element border.
+
+
+What is inheritance referring to in CSS?
+This means that if we give some style to the parent, its child will inherit all the style. For example, if we give the font family value to the body tag, it will apply to all of the child components.
+
+
