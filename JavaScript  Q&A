@@ -8,10 +8,27 @@ When we use triple equal to it compares values as well as data types of those va
 
 Which one should we use more? It is prefered to use triple equal to more since it provides a more accurate answer.
 =====================================================================================================================
-**What is Expression?**
+What is an Expression?
 An expression is any valid piece of code that produces a value. It can be as simple as a number or a variable, 
 or more complex like a mathematical operation or a function call. Expressions can be used wherever a value is 
 expected (e.g., on the right side of an assignment).
+________________________________________________________
+5;               // Simple value
+x;               // Variable reference
+3 + 2;           // Arithmetic expression, evaluates to 5
+myFunction();    // Function call expression
+________________________________________________________
+=====================================================================================================================
+What is a Statement?
+A statement is a complete line of code that performs an action. Statements often include expressions but do more, 
+such as declaring variables, executing conditionals, or controlling the flow of a program. A statement typically ends 
+with a semicolon (;), though it's optional in JavaScript.
+________________________________________________________
+let x = 5;            // Variable declaration statement
+if (x > 3) {          // Conditional statement
+  console.log("Hi");  // This statement calls a function (with an expression as an argument)
+}
+________________________________________________________
 =====================================================================================================================
 What is a difference between if else and ternary operator?
 If else is a statement, while ternary operator is an expression. The ternary operator provides a shorter syntax for if...else.
