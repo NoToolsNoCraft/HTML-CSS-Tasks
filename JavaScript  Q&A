@@ -1,0 +1,34 @@
+What is the difference between double equal to and triple equal to in JS?
+When we use double equal to it compares values that we given. For example:
+5 == '5'; // true, because '5' (string) is coerced to 5 (number) before comparison
+
+When we use triple equal to it compares values as well as data types of those values. Check out the example:
+5 === '5'; // false, because the types are different (number vs. string)
+5 === 5;   // true, because both value and type are the same
+
+Which one should we use more? It is prefered to use triple equal to more since it provides a more accurate answer.
+=====================================================================================================================
+**What is Expression?**
+An expression is any valid piece of code that produces a value. It can be as simple as a number or a variable, 
+or more complex like a mathematical operation or a function call. Expressions can be used wherever a value is 
+expected (e.g., on the right side of an assignment).
+=====================================================================================================================
+What is a difference between if else and ternary operator?
+If else is a statement, while ternary operator is an expression. The ternary operator provides a shorter syntax for if...else.
+Here is an if...else example:
+________________________________________________________
+let age = 20;
+
+if (age >= 18) {
+  console.log("You are eligible to vote.");
+} else {
+  console.log("You are not eligible to vote.");
+}
+________________________________________________________
+
+Also here is an example for tenary operator:
+________________________________________________________
+let age = 20;
+age >= 18 ? console.log("You are eligible to vote.") : console.log("You are not eligible to vote.");
+________________________________________________________
+
