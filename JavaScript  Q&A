@@ -48,4 +48,42 @@ ________________________________________________________
 let age = 20;
 age >= 18 ? console.log("You are eligible to vote.") : console.log("You are not eligible to vote.");
 ________________________________________________________
+=====================================================================================================================
+Is JavaScript single-threaded or multi-threaded?
+JavaScript is single-threaded, which means it can only execute one task at a time in a single sequence. This design 
+is based on the idea that a single thread handles all operations, so only one line of code runs at any given moment. 
+However, JavaScript uses an event loop to manage tasks like user interactions or data fetching. This event loop allows 
+it to handle asynchronous tasks, like waiting for data from a server, by pausing these tasks and moving on to other code 
+until the waiting task is ready, giving the impression that it can do multiple things at once.
+=====================================================================================================================
+Synchronous & asynchronous tasks
+Synchronous tasks in programming are those that run one after another, in sequence. This means the code waits for the 
+current task to finish before moving on to the next one, like waiting for a light to turn green before you can move your 
+car. Asynchronous tasks, on the other hand, don’t make the program wait. When a task is asynchronous, the program can start 
+it and move on to other tasks while it’s still running. For example, if you ask your friend to bake a cake (an asynchronous 
+task), you can still do other things while you wait for the cake to finish baking, instead of just standing there doing nothing. 
+In programming, this helps keep the program running smoothly, even if some tasks take time to complete.
+JavaScript can perform both synchronous and asynchronous tasks. By default, JavaScript runs code synchronously, meaning it 
+executes one line at a time in order. However, it can handle asynchronous tasks using features like setTimeout, fetch, Promises, 
+and async/await. These allow JavaScript to start tasks that may take time, like waiting for data from a server, without stopping 
+the rest of the program. This mix of synchronous and asynchronous behavior helps JavaScript remain responsive and efficient, 
+especially in web development where user interactions and data fetching are common.
+=====================================================================================================================
+Data types in JavaScript
+In JavaScript, data types can be categorized as primitive or non-primitive (also known as reference types). 
+Here's how they are classified:
 
+Primitive Data Types
+Number: e.g., 42, 3.14
+String: e.g., 'Hello', "World"
+Boolean: e.g., true, false
+Undefined: e.g., let x; // x is undefined
+Null: e.g., let y = null
+Symbol: e.g., Symbol('unique')
+BigInt: e.g., 12345678901234567890n
+
+Non-Primitive (Reference) Data Types
+Object: e.g., { name: 'John' }, [1, 2, 3], functions, arrays, etc.
+
+Primitive data types are immutable and hold a single value. Non-primitive data types, like objects, 
+are mutable and can hold collections of values or more complex structures.
