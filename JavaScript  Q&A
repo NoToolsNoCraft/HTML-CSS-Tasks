@@ -87,3 +87,44 @@ Object: e.g., { name: 'John' }, [1, 2, 3], functions, arrays, etc.
 
 Primitive data types are immutable and hold a single value. Non-primitive data types, like objects, 
 are mutable and can hold collections of values or more complex structures.
+=====================================================================================================================
+What is DOM?
+The DOM, or Document Object Model, is a programming interface for web documents. It represents the structure of an 
+HTML or XML document as a tree of objects, where each part of the document (elements, attributes, text) is represented 
+as a node that can be manipulated with programming languages like JavaScript.
+
+In the context of HTML, CSS, and JavaScript:
+HTML: The DOM reflects the structure and content of the web page. When a browser loads an HTML document, it creates a 
+      DOM tree that represents the document and its elements.
+CSS: The DOM allows for styling manipulation by changing element properties directly using JavaScript. You can use the 
+     DOM to dynamically apply or change CSS styles.
+JavaScript: JavaScript interacts with the DOM to modify the document structure, content, and styles in real-time. 
+            This lets you create dynamic and interactive web pages by adding, changing, or removing elements and
+            handling user events. In simple terms, the DOM is what allows JavaScript to access and modify the content 
+            and structure of a web page after it has loaded.
+=====================================================================================================================
+What are Higher-order functions?
+Higher-order functions are functions that can either take other functions as arguments or return functions as their result. 
+This concept is common in JavaScript and other programming languages that support functional programming. Higher-order 
+functions allow for more flexible and reusable code.
+
+Examples in JavaScript:
+Functions as arguments: A higher-order function can take one or more functions as input. For example, the Array method map 
+takes a callback function as an argument and applies it to each element in the array:
+________________________________________________________
+const numbers = [1, 2, 3, 4];
+const doubled = numbers.map(num => num * 2); // [2, 4, 6, 8]
+________________________________________________________
+
+Functions as return values: A higher-order function can return a function as its output:
+________________________________________________________
+function createMultiplier(multiplier) {
+  return function(num) {
+    return num * multiplier;
+  };
+}
+
+const double = createMultiplier(2);
+console.log(double(5)); // 10
+________________________________________________________
+=====================================================================================================================
